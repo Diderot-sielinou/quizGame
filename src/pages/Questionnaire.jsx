@@ -26,10 +26,9 @@ export default function Questionnaire() {
 
   useEffect(()=>{
     if(time > 0){
-      const t = setInterval(()=>{
-        setTime((prevTime)=>prevTime-1)
+      setTimeout(()=>{
+        setTime(time -1)
       },1000);
-      return ()=> clearInterval(t)
     }else if(time === 0){
       handleNext(tabQuestions[number],"")
     }
