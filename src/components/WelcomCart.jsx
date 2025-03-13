@@ -12,7 +12,7 @@ export default function WelcomCart({ navig, isLoading }) {
             you have 10 seconds to answer the question asked with truth or
             false. <br /> after this time we automatically move on to the next question <br />
             NB: a question passed without an answer will not award you any
-            points?
+            points
           </p>
         </div>
         <div className="row">
