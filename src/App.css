@@ -71,7 +71,7 @@ body {
   height: auto;
 }
 
-.table tr {
-  color: white;
+.table tr ,td,th {
+  color: white !important;
   background: #233050 !important;
 }
