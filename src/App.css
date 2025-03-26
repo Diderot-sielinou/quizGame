@@ -47,11 +47,17 @@ body {
   width: 100%;
   min-height: 100vh;
   align-items: center;
+  /* background-color: #233050; */
   
 }
 
 .list {
   width: 100%;
+}
+
+.card {
+  background: #233050 !important;
+  color: white !important;
 }
 
 .bouton {
@@ -63,4 +69,9 @@ body {
 
 .question-box {
   height: auto;
+}
+
+.table tr {
+  color: white;
+  background: #233050 !important;
 }

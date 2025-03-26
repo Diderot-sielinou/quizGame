@@ -1,11 +1,12 @@
 import PropTypes from "prop-types";
+import he from 'he'
 
 export default function ResultList({ tabResponse, score, star }) {
   return (
     <div className="container bo">
       <div className="card list">
         <div className="card-header d-flex align-items-center g-1">
-          <h3>score : {score} / </h3>10{" "}
+          <h3>score : {score} / </h3>10
           {score > 5 ? (
             <h3 className="mx-2">you win</h3>
           ) : (
@@ -27,7 +28,7 @@ export default function ResultList({ tabResponse, score, star }) {
                 return (
                   <tr key={index + 1}>
                     <th scope="row">{index + 1}</th>
-                    <td> {item.question}</td>
+                    <td> {he.decode(item.question)}</td>
                     <td>{item.correct_answer}</td>
                     <td> {item.yours} </td>
                   </tr>
@@ -35,7 +36,7 @@ export default function ResultList({ tabResponse, score, star }) {
               })}
             </tbody>
           </table>
-          <button onClick={() => star()} className="btn btn-outline-info ">
+          <button onClick={() => star()} className="btn btn-outline-info text-white ">
             restard
           </button>
         </div>
