@@ -43,13 +43,21 @@ body {
 
 .bo {
   display: flex;
-  place-items: center;
-  height: 100vh;
+  /* place-items: center; */
   width: 100%;
+  min-height: 100vh;
+  align-items: center;
+  /* background-color: #233050; */
+  
 }
 
 .list {
   width: 100%;
+}
+
+.card {
+  background: #233050 !important;
+  color: white !important;
 }
 
 .bouton {
@@ -61,4 +69,9 @@ body {
 
 .question-box {
   height: auto;
+}
+
+.table tr ,td,th {
+  color: white !important;
+  background: #233050 !important;
 }

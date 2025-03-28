@@ -9,9 +9,10 @@ export default function WelcomCart({ navig, isLoading }) {
         </div>
         <div className="row">
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias
-            officiis consequuntur impedit sequi natus delectus incidunt quam vel
-            temporibus magnam?
+            you have 10 seconds to answer the question asked with truth or
+            false. <br /> after this time we automatically move on to the next question <br />
+            NB: a question passed without an answer will not award you any
+            points
           </p>
         </div>
         <div className="row">
@@ -30,7 +31,6 @@ export default function WelcomCart({ navig, isLoading }) {
               start game
             </button>
           )}
-
         </div>
       </div>
     </div>
